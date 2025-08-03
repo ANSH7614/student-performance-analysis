@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+
+players = ['Virat', 'Rohit', 'Dhoni', 'Rahul', 'Buttler']
+runs = [973, 881, 1237, 670, 863]
+
+plt.figure(figsize=(8, 4))
+plt.bar(players, runs, color='orange')
+plt.title('Top Run Scorers in IPL')
+plt.xlabel('Players')
+plt.ylabel('Runs')
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
+
+teams = ['MI', 'CSK', 'RCB', 'KKR', 'SRH']
+wins = [5, 5, 1, 2, 1]
+
+plt.figure(figsize=(8, 4))
+plt.pie(wins, labels=teams, autopct='%1.1f%%', startangle=140, colors=['blue', 'yellow', 'red', 'purple', 'orange'])
+plt.title('IPL Team Wins Distribution')
+plt.tight_layout()
+plt.show()
